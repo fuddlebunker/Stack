@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CE8CA86619E7BCAC00D5A3D1 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE8CA86519E7BCAC00D5A3D1 /* main.cpp */; };
+		CE8CA87019E7BCEA00D5A3D1 /* Stack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE8CA86C19E7BCEA00D5A3D1 /* Stack.cpp */; };
+		CE8CA87119E7BCEA00D5A3D1 /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE8CA86D19E7BCEA00D5A3D1 /* Menu.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,12 @@
 /* Begin PBXFileReference section */
 		CE8CA86219E7BCAC00D5A3D1 /* Stack */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Stack; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE8CA86519E7BCAC00D5A3D1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CE8CA86C19E7BCEA00D5A3D1 /* Stack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Stack.cpp; sourceTree = "<group>"; };
+		CE8CA86D19E7BCEA00D5A3D1 /* Menu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Menu.cpp; sourceTree = "<group>"; };
+		CE8CA86E19E7BCEA00D5A3D1 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		CE8CA86F19E7BCEA00D5A3D1 /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Types.h; sourceTree = "<group>"; };
+		CEDDC44719E85A01007AD7ED /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		CEDDC44819E86E4F007AD7ED /* StdAfx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = StdAfx.h; path = ../StdAfx.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +65,13 @@
 		CE8CA86419E7BCAC00D5A3D1 /* Stack */ = {
 			isa = PBXGroup;
 			children = (
+				CEDDC44819E86E4F007AD7ED /* StdAfx.h */,
 				CE8CA86519E7BCAC00D5A3D1 /* main.cpp */,
+				CE8CA86C19E7BCEA00D5A3D1 /* Stack.cpp */,
+				CEDDC44719E85A01007AD7ED /* Stack.h */,
+				CE8CA86D19E7BCEA00D5A3D1 /* Menu.cpp */,
+				CE8CA86E19E7BCEA00D5A3D1 /* Menu.h */,
+				CE8CA86F19E7BCEA00D5A3D1 /* Types.h */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
@@ -118,7 +132,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8CA87119E7BCEA00D5A3D1 /* Menu.cpp in Sources */,
 				CE8CA86619E7BCAC00D5A3D1 /* main.cpp in Sources */,
+				CE8CA87019E7BCEA00D5A3D1 /* Stack.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +248,7 @@
 				CE8CA86B19E7BCAC00D5A3D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

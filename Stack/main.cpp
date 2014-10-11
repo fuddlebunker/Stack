@@ -1,15 +1,39 @@
+// Program:           Stack Class Project
+// Software Engineer: Benjamin E Harrison
+// Date:              10/10/14
 //
-//  main.cpp
-//  Stack
+// Purpose:
 //
-//  Created by Fuddlebunker on 10/10/14.
-//  Copyright (c) 2014 Benjamin Harrison. All rights reserved.
 //
-
+//
+//
+//
+#include "StdAfx.h"
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+// Main ====
+int main() {
+    
+    //  ================================
+    //  Variable and Object Declarations
+    //  ================================
+    Menu menu;
+    Stack intStack;
+    
+    menu.Banner();
+    
+    do{
+        menu.Display();
+        menu.QueryUser();
+        menu.ProcessCommand( intStack);
+        
+    } while (menu.Continue() ); // do ... while loop
+    //  ================================================
+    
     return 0;
-}
+}// Function Main ()
+//  ================
+
+
