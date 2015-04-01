@@ -30,7 +30,7 @@ int main() {
         menu.ProcessCommand( intStack);
         
     } while (menu.Continue() ); // do ... while loop
-    //  ================================================
+    //  ============================================
     
     return 0;
 }// Function Main ()

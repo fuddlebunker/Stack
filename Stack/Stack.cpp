@@ -85,6 +85,26 @@ using namespace std;
     }// Member-Function Print()
 //  ===========================
 
+//  ==============================
+//  Member-Function ReversePrint()
+//  ==============================
+    void Stack::ReversePrint( ){
+        cout << "Stack Bottom" << endl;
+        
+        if (Empty() )
+            cout << "The stack is empty." << endl;
+        else{
+            for ( int ii= 0; ii <= top -1 ; ii++){
+                cout << "elements[" << ii << "] = "
+                     << elements[ii] << endl;
+            }// for
+        }// else
+        
+        cout << "Stack Top" << endl << endl;
+        
+    }// Member-Function ReversePrint()
+//  ==================================
+
 //  ======================
 //  Member-Function Push()
 //  ====================================
@@ -93,6 +113,19 @@ using namespace std;
         top++;
         
     }// Member-Function Push()
+//  ==========================
+
+//  ======================
+//  Member-Function Roll()
+//  ======================
+    void Stack::Roll( ){
+        int temp[1];
+        
+        temp[0] = elements[top -1];
+        elements[top-1] = elements[top-2];
+        elements[top-2] = temp[0];
+ 
+    }// Member-Function Roll()
 //  ==========================
 
 //  =======================

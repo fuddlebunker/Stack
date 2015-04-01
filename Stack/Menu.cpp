@@ -29,7 +29,7 @@ using namespace std;
     Menu:: ~Menu( void ){
         cout << "Boom! Blown up by the Destructor!" << endl;
     }// Destructor ~Menu
-//  =====================
+//  ====================
 
 //  ==============
 //  End Destructor
@@ -53,6 +53,7 @@ using namespace std;
 //      =============================
         void Menu::Set(MenuChoices newValue ){
             userMenuSelection = newValue;
+        
         }// Mutator Method Set
 //      ======================
 
@@ -77,9 +78,10 @@ using namespace std;
 //      Member-Function Display()
 //      =========================
         void Menu::Display(){
-            cout << "1: Quit              4: Pop" << endl;
-            cout << "2: PurgeStack        5: Push" << endl;
-            cout << "3: Initialize Stack  6: Print Stack" << endl;
+            cout << "1: Quit                5: Push" << endl;
+            cout << "2: PurgeStack          6: Print Stack" << endl;
+            cout << "3: Initialize Stack    7: Print Reverse Stack" << endl;
+            cout << "4: Pop                 8: Roll      " << endl;
         
         }// Member-Function Display
 //      ===========================
@@ -112,6 +114,12 @@ using namespace std;
                     break;
                 case 6:
                     userMenuSelection = PrintStack;
+                    break;
+                case 7:
+                    userMenuSelection = ReversePrint;
+                    break;
+                case 8:
+                    userMenuSelection = Roll;
                     break;
                 default: userMenuSelection = Quit;
                     break;
@@ -184,7 +192,15 @@ using namespace std;
                         stack.Print();
                         
                         break;
+                        
+                    case ReversePrint:
+                        stack.ReversePrint();
                     
+                        break;
+                    case Roll:
+                        stack.Roll();
+                        
+                        break;
                     default:
                         cout << "Invalid selection" << endl;
                         stack.Print();

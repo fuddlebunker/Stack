@@ -1,10 +1,6 @@
 
 
-#ifndef Cube_Project_Menu_h
-#define Cube_Project_Menu_h
 
-
-#endif
 #pragma once
 #include <string>
 
@@ -35,7 +31,7 @@ public:
     void        QueryUser( );
     bool        Continue( );
     void        ProcessCommand( Stack& );
-//  ==============================
+//  =====================================
     
 private:
     
